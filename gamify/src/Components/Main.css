@@ -1,0 +1,117 @@
+.container{
+    margin-top:  -10px;
+    height: 150vh;
+    width: 100%;
+    display: flex;
+    background-color: black;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    padding-top: 2rem;
+    font-family: 'roboto';
+
+}
+.inner-container{
+    width: 80%;
+    
+    justify-content: space-around;
+    /* border: 2px solid white; */
+    display: flex;
+    margin-top: 5rem;
+    height: 20rem;
+}
+.cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 2px solid white; */
+    width: 15rem;
+    text-align: center;
+}
+.cont > h4{
+    margin-top: 10px;
+    font-size: 12px;
+}
+img{
+    width: 6rem;
+}
+
+.join{
+    padding: 0.5rem;
+    width: 8rem;
+    background-color: #76B900;
+    border: none;
+    outline: none;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    border-radius: 10px;
+}
+.join:hover{
+    background-color: #111;
+    color: #76B900;
+}
+.slider{
+    margin-top: 30px;
+    height:30vh;
+    width: 100%;
+}
+#img1{
+    width: 200%;
+    height: 25vh;
+    animation: bannermove 15s linear infinite;
+}
+#img2{
+    width: 200%;
+    height: 25vh;
+    animation: bannermove 10s linear infinite;
+}
+#img3{
+    width: 200%;
+    height: 25vh;
+    animation: bannermove 15s linear infinite;
+}
+@keyframes bannermove {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(-50%, 0);
+    }
+  }
+@media only screen and (max-width: 600px) {
+    .inner-container{
+        width: 80%;
+        flex-direction: column;
+        justify-content: space-around;
+        /* border: 2px solid white; */
+        display: flex;
+        margin-top: 12rem;
+        height: 20rem;
+    }
+    .cont{
+        margin: 10px;
+        
+    }
+    .cont > h4{
+        margin-top: 10px;
+        font-size: 10px;
+    }
+    .container > h2{
+        font-size: 18px;
+        text-align: center;
+        display: flex ;
+    }
+    .container > h1{
+        font-size: 20px;
+        text-align: center;
+        display: flex ;
+    }
+
+    .join{
+        margin-top: 12rem;
+    }
+    .slider{
+       margin-top: 4rem;
+    }
+}

@@ -1,0 +1,17 @@
+.bottom{
+    margin-top: 10rem;
+    background-color: black;
+    color: white;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 2rem;
+}
+@media only screen and (max-width: 600px) {
+    .bottom{
+        margin-top: 40rem;
+
+    }
+}
